@@ -44,7 +44,8 @@ git reset --HEAD~1...
 <!-- 이전 커밋으로 되돌리기 -->
 git reset --HEAD^ 
 
-
+## git commit 하나로 합치고 merge 하기
+git merge --squash <branch명>
 
 
 
