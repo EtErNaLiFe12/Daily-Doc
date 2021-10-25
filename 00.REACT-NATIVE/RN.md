@@ -21,6 +21,8 @@
 
 ## AsyncStorage 
 
+npm i @react-native-community/async-storage
+
 ```js
 // import 하기
 import { ASYNC_PARAMS } from "@common/xxxxxx";
@@ -62,6 +64,29 @@ useEffect(() => {
 // 실행 할 함수 이름 삽입시 변경 또는 수정 될때마다 실행 함. 그 전까지는 최초 1번만 실행함.
 
 ```
+
+## shadow style
+
+```js
+const styles = StyleSheet.create({
+  textInput: {
+    width: '100%',
+    height: 70,
+    paddingTop: 5,
+    paddingBottom: 5,
+    backgroundColor: "#ffffff",
+    shadowColor: "#000", // ios
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5, // android
+}
+```
+
+
 
 
 
