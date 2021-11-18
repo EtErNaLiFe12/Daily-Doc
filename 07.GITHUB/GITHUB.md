@@ -47,6 +47,16 @@ git reset --HEAD^
 ## git commit 하나로 합치고 merge 하기
 git merge --squash <branch명>
 
+## git rebase
+git checkout master
+git pull origin master
+git checkout <branch명>
+git rebase master 
+-> 현재 master의 브랜치에 HEAD와 위치를 같게 하고 수정사항들은 위로 올라감.
+git checkout master
+git merge feature/mycontent_m --ff 
+
+rebase시에는 항상 수정사항을 master 브랜치에 merge시 위로 올릴수가 있어서 관리하기 편함.
 
 
 
