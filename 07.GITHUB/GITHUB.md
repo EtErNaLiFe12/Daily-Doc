@@ -58,5 +58,17 @@ git merge feature/mycontent_m --ff
 
 rebase시에는 항상 수정사항을 master 브랜치에 merge시 위로 올릴수가 있어서 관리하기 편함.
 
+## git fatal:Authentication failed for.... 관련 에러 해결 방법
+<!-- git config list 확인 -->
+git config --list
+<!-- git config 초기화 하기 -->
+git config --system --unset credential.helper  
+username / password 재입력 할 것.
+
+## ssh 
+git remote add origin git@github.com-work:EtErNaLiFe12/Daily-Doc.git
+git clone git@github.com-work:EtErNaLiFe12/Daily-Doc.git
+
+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
 
 
