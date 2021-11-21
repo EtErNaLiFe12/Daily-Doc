@@ -63,6 +63,41 @@ useEffect(() => {
 
 ```
 
+## HTMLVIEW
+
+```js
+  <HTMLView html={note}/>
+```
 
 
+## screen width & height 값 가져오기
 
+```js
+export const S_HEIGHT = Dimensions.get('screen').height;  //screen은 핸드폰의 상부 bar영역을 포함시킴
+export const S_WIDTH = Dimensions.get('screen').width;
+//--------------------------------------------------------
+export const S_WIDTH = Dimensions.get('window').width; // window는 핸드폰의 상부 bar영역을 포함시키지 않음
+export const S_WIDTH = Dimensions.get('window').height;
+```
+
+## stylesheet 사용법
+```js
+export default const test () => {
+  return <View style={{styles.container}}></View>
+}
+
+
+const styles = StyleSheet.create({
+  container: {
+    width: 214,
+    paddingLeft: 15,
+    paddingRight: 20,
+    paddingVertical: 20,
+    justifyContent: "center",
+    backgroundColor: colors.COLOR_SYSTEM_WHITE,
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderColor: colors.COLOR_PRIMARY_PINK_PINK_02
+  }
+})
+```
