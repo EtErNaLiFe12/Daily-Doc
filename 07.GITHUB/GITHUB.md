@@ -62,13 +62,23 @@ rebase시에는 항상 수정사항을 master 브랜치에 merge시 위로 올�
 <!-- git config list 확인 -->
 git config --list
 <!-- git config 초기화 하기 -->
-git config --system --unset credential.helper  
+git config --local --unset credential.helper  <!--local에서 unset하기-->
+git config --global --unset credential.helper <!--global에서 unset하기-->
+git config --system --unset credential.helper <!--system에서 unset하기-->
+
+출처: https://oizys.tistory.com/64 [우당탕탕 개발] 
 username / password 재입력 할 것.
 
 ## ssh 
 git remote add origin git@github.com-work:EtErNaLiFe12/Daily-Doc.git
 git clone git@github.com-work:EtErNaLiFe12/Daily-Doc.git
 
-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
+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 - public access token from github
 
+## github branch
+git remote update <!--원격저장소에 있는 브랜치 가져오기-->
+git branch -a
+git branch -r
+git branch -d feature/mycontent_m <!--git delete in local-->
+git push origin :feature/mycontent_m <!--git delete in remote repository-->
 
