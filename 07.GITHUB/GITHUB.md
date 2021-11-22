@@ -1,8 +1,9 @@
 # Github 관련
 
 ## 1. master branch가 리모트의 master branch를 따라가도록 설정 하기
-
+<!--두개 다 같음-->
 git push --set-upstream origin master
+git push -u origin master
 
 ## 2. cherry pick - 다른 브랜치의 커밋 가져오기
 
@@ -78,7 +79,7 @@ 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 - public access token from github
 ## github branch
 git remote update <!--원격저장소에 있는 브랜치 가져오기-->
 git branch -a
-git branch -r
+git branch -r <!--원격저장소의 브랜치 확인-->
 git branch -d feature/mycontent_m <!--git delete in local-->
 git push origin :feature/mycontent_m <!--git delete in remote repository-->
 
