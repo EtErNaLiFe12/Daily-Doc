@@ -101,3 +101,18 @@ const styles = StyleSheet.create({
   }
 })
 ```
+
+## shadow(ios/android)
+
+```js
+// ios shadow style 영역
+style={{ shadowColor: "#000",
+          shadowOffset: {
+              width: 0,
+              height: 1,
+          },
+          shadowOpacity: 0.07,
+          shadowRadius: 12,
+          // android shadow style 영역
+          elevation: 2,}}> 
+```
