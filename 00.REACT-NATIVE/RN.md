@@ -116,3 +116,18 @@ style={{ shadowColor: "#000",
           // android shadow style 영역
           elevation: 2,}}> 
 ```
+
+## Progress Bar - react native
+
+```js
+import { ProgressBar } from 'react-native-paper';
+
+<ProgressBar 
+  progress={0.5} 
+  color={'#e4a8b0'} // progressbar color
+  style={{ backgroundColor: '#f4f4f4'}} // progressbar background color(applied with inline style)
+/>
+```
+
+
+
