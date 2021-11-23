@@ -54,13 +54,15 @@ useEffect( async () => {
 ## useEffect
 
 ```js
-
 useEffect(() => {
+  console.log('컴포넌트가 나타남');
   // 실행 할 함수
+  return () => {
+    console.log('컴포넌트가 사라짐'); // clean-up 함수
+  }
 }, []) // 빈배열 또는 실행 함수 이름 삽입 - 빈 배열을 default값으로 넣어줘야 최초 한번만 실행 (안 넣어주면 두세번 실행됨)
 
 // 실행 할 함수 이름 삽입시 변경 또는 수정 될때마다 실행 함. 그 전까지는 최초 1번만 실행함.
-
 ```
 
 ## HTMLVIEW

@@ -80,6 +80,6 @@ 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 - public access token from github
 git remote update <!--원격저장소에 있는 브랜치 가져오기-->
 git branch -a
 git branch -r <!--원격저장소의 브랜치 확인-->
-git branch -d feature/mycontent_m <!--git delete in local-->
-git push origin :feature/mycontent_m <!--git delete in remote repository-->
+git branch -d feature/xxx <!--git delete in local-->
+git push origin :feature/xxx <!--git delete in remote repository-->
 
