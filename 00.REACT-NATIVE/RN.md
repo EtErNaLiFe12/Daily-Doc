@@ -23,24 +23,24 @@
 
 ```js
 // import 하기
-import { ASYNC_PARAMS } from "@common/xxxxxx";
+import { ASYNC_PARAMETER } from "@common/xxxxxx";
 import AsyncStorage from "@react-native-community/async-storage";
 
 // /common/xxx.js
-export const ASYNC_PARAMS = {
-  FIRST_APP_SETUP: 'keyFirstLaunch'
+export const ASYNC_PARAMETER = {
+  FIRST_APP: 'FirstLaunch'
 };
 
 // /App.js
 useEffect( async () => {
     try {
-      const isFirstLaunched = await AsyncStorage.getItem(ASYNC_PARAMS.FIRST_APP_SETUP)
-      console.log('chk', isFirstLaunched)
-      if (isFirstLaunched === null) {
+      const FirstLaunched = await AsyncStorage.getItem(ASYNC_PARAMETER.FIRST_APP)
+      console.log('check', FirstLaunched)
+      if (FirstLaunched === null) {
         console.log('setFirstLaunch')
-        AsyncStorage.setItem(ASYNC_PARAMS.FIRST_APP_SETUP, "true")
+        AsyncStorage.setItem(ASYNC_PARAMETER.FIRST_APP, "true")
         const eventAttr = new AdbrixRm.AttrModel();
-          eventAttr.setAttrs("firstLaunch",isFirstLaunched)
+          eventAttr.setAttrs("firstLaunch",FirstLaunched)
         AdbrixRm.commerceViewHome(eventAttr);
       }
     } catch (error) {
@@ -96,10 +96,10 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingVertical: 20,
     justifyContent: "center",
-    backgroundColor: colors.COLOR_SYSTEM_WHITE,
+    backgroundColor: "#fff",
     borderStyle: "solid",
     borderWidth: 1,
-    borderColor: colors.COLOR_PRIMARY_PINK_PINK_02
+    borderColor: "#fb5849"
   }
 })
 ```
