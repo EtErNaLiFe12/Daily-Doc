@@ -83,3 +83,8 @@ git branch -r <!--원격저장소의 브랜치 확인-->
 git branch -d feature/xxx <!--git delete in local-->
 git push origin :feature/xxx <!--git delete in remote repository-->
 
+
+## github remote repo connection
+
+git init
+git remote add origin <git repo https>
