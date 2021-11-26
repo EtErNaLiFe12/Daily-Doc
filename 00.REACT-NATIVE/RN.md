@@ -1,5 +1,7 @@
 # REACT NATIVE 관련
 
+## React-native start
+react-native init ReactNativeTodos
 ## .toFIxed - 소수점 자리 위치
 
 ```jsx
