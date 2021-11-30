@@ -123,7 +123,6 @@ style={{ shadowColor: "#000",
           elevation: 2,}}> 
 ```
 
-<<<<<<< HEAD
 ## shadow style
 
 ```js
@@ -147,7 +146,6 @@ const styles = StyleSheet.create({
 
 
 
-=======
 ## Progress Bar - react native
 
 ```js
@@ -159,7 +157,3 @@ import { ProgressBar } from 'react-native-paper';
   style={{ backgroundColor: '#f4f4f4'}} // progressbar background color(applied with inline style)
 />
 ```
->>>>>>> 651771532803e94b264c2a8bd74d5d51f2351310
-
-
-
