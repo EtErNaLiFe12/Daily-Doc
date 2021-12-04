@@ -35,3 +35,30 @@ const check = list.map((li) => li.files)
 </View>
 // 배열 안에 있는 값들에 대해 0보다 큰 경우
 ```
+## split()
+
+- 들어오는 문자열에서 특정 문자를 기준으로 나누어 배열로 반환됨
+
+12345678/9012345
+
+```js
+const exam = '12345678/9012345'
+const ex = exam.split('/');
+
+console.log(ex);
+
+// ex - ["12345678", "9012345"];
+```
+
+## replace()
+
+- 들어오는 문자열을 다른것으로 바꿔서 반환해줌
+
+```js
+const exp = 'kakaoTalk';
+const ex = exp.replace('kakaoTalk', 'line');
+
+console.log(ex);
+
+// ex - line
+```
