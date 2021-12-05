@@ -2,6 +2,12 @@
 
 ## React-native start
 react-native init ReactNativeTodos
+npx react-native init AwesomeProject
+npx react-native init AwesomeProject --version X.XX.X
+
+## devices check
+adb devices
+
 ## .toFIxed - 소수점 자리 위치
 
 ```jsx
