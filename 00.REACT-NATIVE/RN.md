@@ -157,3 +157,11 @@ import { ProgressBar } from 'react-native-paper';
   style={{ backgroundColor: '#f4f4f4'}} // progressbar background color(applied with inline style)
 />
 ```
+
+## build clean
+cd android
+./gradlew clean
+
+## build - apk 만들기
+cd android
+./gradlew clean build
