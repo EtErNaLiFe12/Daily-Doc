@@ -171,3 +171,5 @@ cd android
 ## build - apk 만들기
 cd android
 ./gradlew clean assembleRelease
+
+

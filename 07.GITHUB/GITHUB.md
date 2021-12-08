@@ -77,7 +77,7 @@ git clone git@github.com-work:EtErNaLiFe12/Daily-Doc.git
 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 - public access token from github
 
 ## 10. github branch
-git remote update <!--원격저장소에 있는 브랜치 가져오기-->
+git remote update <!--원격저장소에 있는 브랜치 update-->
 git branch -a <!--local 브랜치 확인-->
 git branch -r <!--원격저장소의 브랜치 확인-->
 git branch -d feature/xxx <!--git delete in local-->
