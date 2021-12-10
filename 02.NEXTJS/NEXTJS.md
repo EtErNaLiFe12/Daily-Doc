@@ -3,7 +3,11 @@ npx create-next-app@latest
 
 ## Nextjs react-device-detect package 설치
 
+<!-- 참고 github 주소 -->
+https://github.com/duskload/react-device-detect
+
 npm install react-device-detect --save
 
 * android / ios 기종 판별 등
 * 모바일 / 웹 판별 등
+
