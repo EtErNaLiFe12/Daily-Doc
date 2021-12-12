@@ -88,3 +88,23 @@ git push origin :feature/xxx <!--git delete in remote repository-->
 
 git init
 git remote add origin https://github.com/EtErNaLiFe12/Daily-Doc
+
+
+## 12. remote branch condition check
+
+git remote show origin
+
+<!-- 리모트 브랜치와 로컬 브랜치의 관계를 상세히 볼수 있다 -->
+
+## remote branch referred update
+
+git remote prune origin
+git remote update --prune
+
+<!-- 리모트 브랜치의 더 이상 유효하지 않은 참조를 깨끗이 지우는 명령어 이다. -->
+
+## git branch 동기화
+
+git fetch -p
+
+<!-- 로컬 저장소를 최신 정보로 갱신(리모트 저장소와 동기화)하며 자동적으로 더이상 유효하지 않은 참조를 제거한다. -->
