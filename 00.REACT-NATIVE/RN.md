@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
 
 
 
-## Progress Bar - react native
+## Progress Bar#1 - react native
 
 ```js
 import { ProgressBar } from 'react-native-paper';
@@ -173,3 +173,6 @@ cd android
 ./gradlew clean assembleRelease
 
 
+## Progress Bar#2 - react native
+
+https://github.com/oblador/react-native-progress
