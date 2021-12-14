@@ -96,15 +96,24 @@ git remote show origin
 
 <!-- 리모트 브랜치와 로컬 브랜치의 관계를 상세히 볼수 있다 -->
 
-## remote branch referred update
+## 13. remote branch referred update
 
 git remote prune origin
 git remote update --prune
 
 <!-- 리모트 브랜치의 더 이상 유효하지 않은 참조를 깨끗이 지우는 명령어 이다. -->
 
-## git branch 동기화
+## 14. git branch 동기화
 
 git fetch -p
 
+- 사용하는 이유?
+원래 내용과 바뀐 내용과의 차이를 알 수 있다 (git diff HEAD origin/master)
+commit이 얼마나 됐는지 알 수 있다 (git log --decorate --all --oneline)
+이런 세부 내용 확인 후 git merge origin/master 하면 git pull 상태와 같아진다. (병합까지 완료)
+
 <!-- 로컬 저장소를 최신 정보로 갱신(리모트 저장소와 동기화)하며 자동적으로 더이상 유효하지 않은 참조를 제거한다. -->
+
+## 15. git remote connection address
+
+git remote -v
