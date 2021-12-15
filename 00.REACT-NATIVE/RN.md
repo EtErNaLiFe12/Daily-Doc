@@ -176,3 +176,58 @@ cd android
 ## Progress Bar#2 - react native
 
 https://github.com/oblador/react-native-progress
+
+ ## react native 디버깅시
+ - metro에서 d 누름 -> debugging mode 실행
+ - 자동으로 웹사이트 디버깅 모드 실행됨
+ ## react-native stack navigation
+
+npm install @react-navigation/native @react-navigation/native-stack
+
+- If you have a bare React Native project, install the dependencies with npm:
+
+npm install react-native-screens react-native-safe-area-context
+
+- For iOS with bare React Native project, make sure you have Cocoapods installed. Then  
+  install the pods to complete the installation:
+
+  cd ios
+  pod install
+  cd ..
+
+npm i react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+- vector-icons
+  npm install --save react-native-vector-icons
+
+  react-native link react-native-vector-icons
+
+ios는 직접 설정 해줘야 함. (중복오류 발생됨)...
+
+- drawer navigation
+  npm install --save @react-navigation/drawer
+
+- 하단 navigation
+  npm install --save @react-navigation/bottom-tabs
+
+- material bottom tab navigation
+  npm install --save @react-navigation/material-bottom-tabs react-native-paper
+
+---
+## Axios
+
+npm install --save axios
+
+https://wickies.tistory.com/101?category=768093
+
+https://post.naver.com/viewer/postView.naver?volumeNo=27835820&memberNo=2490752
+
+https://www.youtube.com/watch?v=nrxzK_ky3uc&t=335s
+
+http://yoonbumtae.com/?p=658
+x
+https://aljjabaegi.tistory.com/561?category=971831
+
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=leety72&logNo=221679960960
+
+---
