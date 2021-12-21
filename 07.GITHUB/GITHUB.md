@@ -117,3 +117,20 @@ commit이 얼마나 됐는지 알 수 있다 (git log --decorate --all --oneline
 ## 15. git remote connection address
 
 git remote -v
+
+## 16. git ssh 키 생성
+
+terminal open
+
+ssh-keygen
+
+cd ~/.ssh
+
+<!-- public 키 확인 후 복사 -->
+cat id_rsa.pub 
+
+Github -> Setting -> SSH and GPG keys -> New SSH key
+
+복사한 public키 붙여넣기
+
+setting 완료
