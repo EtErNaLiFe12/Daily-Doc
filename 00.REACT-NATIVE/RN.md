@@ -239,3 +239,40 @@ https://github.com/calintamas/react-native-toast-message/blob/e1c2117b7496a58add
 ## react native audio player package
 
 https://www.npmjs.com/package/react-native-track-player
+
+## react-native modal
+
+<!-- modal에서 modal로 이어지는 process는 권장하지 않음 -->
+https://reactnativeseoul.org/t/modal/737/2
+
+To open another modal from main or first modal that activated, should close first modal in advance.
+
+for instance, if using modal by change the state with react hook - useState(),
+
+then, put false in useState value for close the modal and then open another
+
+modal. 
+
+but it won't work by only using true and false in order to close and open the modal.
+
+```js
+setIsModal(false);
+setIsModal2(true);
+```
+<!-- Countermeasure -->
+
+use setTimeout func. in  for make delay more than 500ms.
+
+setTimeout func wouldn't need in first modal for close.
+
+just need for other one.
+
+```js
+const example = () => {
+  setIsModal(false);
+  setTimeout(()=> {
+    setIsModal2(true);
+  }, 500);
+}
+```
+
