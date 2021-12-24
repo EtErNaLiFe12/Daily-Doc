@@ -276,3 +276,40 @@ const example = () => {
 }
 ```
 
+## stack navigation icons
+
+https://www.npmjs.com/package/@fortawesome/react-native-fontawesome
+
+npm i --save react-native-svg # **
+npm i --save @fortawesome/fontawesome-svg-core
+npm i --save @fortawesome/free-solid-svg-icons
+npm i --save @fortawesome/react-native-fontawesome
+
+Visit fontawesome.com/icons to search for free and Pro icons
+
+npm i --save @fortawesome/free-brands-svg-icons
+npm i --save @fortawesome/free-regular-svg-icons
+
+npm i --save @fortawesome/free-solid-svg-icons
+
+npm i --save react-native-svg-transformer
+
+## react native svg auto link error 
+
+Invariant Violation: requireNativeComponent: "RNSVGPath" was not found in the UIManager
+
+https://github.com/react-native-svg/react-native-svg/issues/834
+
+<!-- in MainApplication.java file -->
+```java
+@Override
+  protected List<ReactPackage> getPackages() {
+    @SuppressWarnings("UnnecessaryLocalVariable")
+    List<ReactPackage> packages = new PackageList(this).getPackages();
+    // Packages that cannot be autolinked yet can be added manually here, for example:
+    // packages.add(new MyReactNativePackage());
+    packages.add(new SvgPackage());
+    return packages;
+  }
+```
+
