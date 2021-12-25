@@ -313,3 +313,23 @@ https://github.com/react-native-svg/react-native-svg/issues/834
   }
 ```
 
+## 외부 폰트 적용하기 
+
+https://velog.io/@ziyoonee/React-Native-custom-font-%EC%A0%81%EC%9A%A9
+
+
+## react native icon 삽입
+
+<!-- android icon generator site-->
+http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=text&foreground.text.text=JB&foreground.text.font=Comic%20Neue&foreground.space.trim=1&foreground.space.pad=0.35&foreColor=rgb(255%2C%20255%2C%20255)&backColor=rgb(33%2C%20150%2C%20243)&crop=0&backgroundShape=square&effects=elevate&name=ic_launcher
+<!-- android -->
+android/app/src/main/res 에 있는 폴더에 icon 삽입
+
+ic_launcher.xml
+ic_launcher_round.xml
+
+<!-- ios icon generator site -->
+https://appicon.co/
+<!-- ios -->
+app이름/Images.xcassets 에서 설정 할 것
+
