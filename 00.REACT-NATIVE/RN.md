@@ -317,6 +317,9 @@ https://github.com/react-native-svg/react-native-svg/issues/834
 
 https://velog.io/@ziyoonee/React-Native-custom-font-%EC%A0%81%EC%9A%A9
 
+root에 /assets/fonts 폴더 생성
+/fonts에 font file 넣기
+npx react-native link 
 
 ## react native icon 삽입
 
