@@ -372,3 +372,9 @@ var styles = StyleSheet.create({
   },
 });
 ```
+
+
+Clear watchman watches: watchman watch-del-all
+Delete node_modules and run yarn install
+Reset Metro's cache: npm start --reset-cache
+Remove the cache: rm -rf /tmp/metro-*
