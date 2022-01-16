@@ -378,3 +378,15 @@ Clear watchman watches: watchman watch-del-all
 Delete node_modules and run yarn install
 Reset Metro's cache: npm start --reset-cache
 Remove the cache: rm -rf /tmp/metro-*
+
+## webview 설치 
+
+npm install --save react-native-webview
+react-native link react-native-webview
+
+```js
+<WebView
+  source={{uri: 'https://github.com/facebook/react-native'}}
+  style={{marginTop: 20}}
+/>
+```
