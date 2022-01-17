@@ -390,3 +390,17 @@ react-native link react-native-webview
   style={{marginTop: 20}}
 />
 ```
+
+## navigation route.params 관련
+
+```js
+const Test = ( props ) => {
+  const navigation = useNavigation();
+  const { route } = props;
+  const {name, index} = route?.params;
+
+// if
+const Test = ( route ) => {
+  console.log(route?.params); // 조회 불가 - 위와 같이 불러와야함
+}
+```
