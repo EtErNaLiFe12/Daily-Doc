@@ -404,3 +404,13 @@ const Test = ( route ) => {
   console.log(route?.params); // 조회 불가 - 위와 같이 불러와야함
 }
 ```
+
+## app name modification
+
+<!-- ios -->
+- xcode 열기 
+- Xcode에서 General탭 > Identity > Display Name
+
+<!-- android -->
+- app.json에 들어가서 displayName을 변경한다.
+- res/values/strings.xml코드를 수정한다. app_name을 원하는 앱 이름올 변경하고 다시 실행하면 앱 이름 바뀐다.
