@@ -8,3 +8,38 @@ https://goo-gy.github.io/2021-02-28-material-ui
 
 npm install @material-ui/core
 npm install @material-ui/icons
+
+
+## react slick - css customizing
+
+```tsx
+const settings = {
+  dots: true,
+  arrows: true,
+  autoplay: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  speed: 1000,
+  appendDots: (dots: any) => {
+    return (
+      <Box
+        component="li"
+        sx={{
+          position: 'absolute',
+          top: 2,
+          right: 20,
+          '&.slick-dots': {
+            textAlign: 'right'
+          },
+          '&.slick-dots li button:before': {
+            color: '#fff !important'
+          }
+        }}
+      >
+        {dots}
+      </Box>
+    );
+  }
+};
+```
