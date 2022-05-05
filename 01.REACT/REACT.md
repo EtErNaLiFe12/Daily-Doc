@@ -43,3 +43,26 @@ const settings = {
   }
 };
 ```
+
+## react-lottie animation
+
+### package install
+yarn add react-lottie
+yarn add @types/react-lottie
+
+```tsx
+
+import Lottie from 'react-lottie';
+import animationData from 'assets/hi.json';
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
+ <Lottie options={defaultOptions} height={400} width={300} />
+```
