@@ -66,3 +66,12 @@ import animationData from 'assets/hi.json';
 
  <Lottie options={defaultOptions} height={400} width={300} />
 ```
+
+## Scroll action(as like toss)
+
+```js
+  window.scrollTo({
+    top: scroll.current?.offsetTop! - 60,
+    behavior: 'smooth'
+  });
+```
