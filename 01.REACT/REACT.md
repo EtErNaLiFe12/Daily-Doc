@@ -75,3 +75,21 @@ import animationData from 'assets/hi.json';
     behavior: 'smooth'
   });
 ```
+
+
+## useSelector 최적화
+
+```js
+import { shallowEqual } from 'react-redux';
+
+function CounterContainer() {
+  const { number, diff } = useSelector(
+    state => ({
+    number: state.counter.number,
+    diff: state.counter.diff
+  }),
+  shallowEqual
+  );
+}
+
+```
