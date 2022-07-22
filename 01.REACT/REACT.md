@@ -93,3 +93,25 @@ function CounterContainer() {
 }
 
 ```
+
+## animation style css 
+
+```jsx
+ sx={{
+    height: 28,
+    borderRadius: 14,
+    [`&.${linearProgressClasses.colorPrimary}`]: {
+      backgroundColor: COLORS.chartGray
+    },
+    [`& .${linearProgressClasses.bar}`]: {
+      borderRadius: 14,
+      backgroundColor: COLORS.primary400,
+      animation: 'linear-translate 1s linear',
+      '@keyframes linear-translate': {
+        from: {
+          transform: 'translateX(-100%)'
+        }
+      }
+    }
+  }}
+```
