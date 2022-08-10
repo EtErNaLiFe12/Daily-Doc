@@ -115,3 +115,42 @@ function CounterContainer() {
     }
   }}
 ```
+
+## React Query
+
+- If you ever want to disable a query from automatically running, you can use the enabled = false option.
+When enabled is false:
+If the query has cached data
+The query will be initialized in the status === 'success' or isSuccess state.
+If the query does not have cached data
+The query will start in the status === 'loading' and fetchStatus === 'idle'
+The query will not automatically fetch on mount.
+The query will not automatically refetch in the background
+The query will ignore query client invalidateQueries and refetchQueries calls that would normally result in the query refetching.
+refetch returned from useQuery can be used to manually trigger the query to fetch.
+
+### lazy queries
+
+```tsx
+function Todos() {
+  const [filter, setFilter] = React.useState('')
+
+  const { data } = useQuery(
+    ['todos', filter],
+    () => fetchTodos(filter),
+    {
+      // ⬇️ disabled as long as the filter is empty
+      enabled: !!filter
+    }
+  )
+
+  return (
+      <div>
+        // 🚀 applying the filter will enable and execute the query
+        <FiltersForm onApply={setFilter} />
+        {data && <TodosTable data={data}} />
+      </div>
+  )
+}
+```
+
