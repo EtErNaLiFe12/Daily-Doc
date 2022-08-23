@@ -58,3 +58,7 @@ cd ios && rm -rf Pods Podfile.lock && pod install
 
 <!-- countermeasure url -->
 https://blog.cpming.top/p/uint8-t-aka-unsigned-char-vs-enum-clock-t
+
+#### M1 pod install commend
+sudo arch -x86_64 gem install ffi
+arch -x86_64 pod install
