@@ -134,3 +134,12 @@ Github -> Setting -> SSH and GPG keys -> New SSH key
 복사한 public키 붙여넣기
 
 setting 완료
+
+
+## 17. git remote origin url from ssh to https
+
+해당 work folder내에서
+
+open .git/config
+
+remote.origin.url=git@github.com:finset-io/betterday-app.git 를 https 주소로 변경하면됨.
