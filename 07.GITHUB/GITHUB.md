@@ -143,3 +143,12 @@ setting 완료
 open .git/config
 
 remote.origin.url=git@github.com:finset-io/betterday-app.git 를 https 주소로 변경하면됨.
+## 17. git stash in CLI
+
+git stash 
+git stash pop
+
+git stash save {name}
+git stash apply stash@{[number]} <!-- 특정 stash 꺼내기 -->
+git stash drop stash@{[number]} <!-- 특정 stash 삭제하기 -->
+
